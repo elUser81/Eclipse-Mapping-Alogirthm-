@@ -1,0 +1,23 @@
+,
+system_name,EPIC_201325107_anomaly_phi0_1
+distance,12.5
+ecc,0.0
+resolution,20
+temperature_primary,6632.0
+chi_AIM,0.6
+phi0,180.0
+radius_primary,1.670691
+temperature_secondary,4600.0
+period,0.7443
+mass_primary,0.841
+mass_secondary,0.235
+q,0.28
+chi_actual,1874.1556619513162
+radius_secondary,1.643034
+delta,3.0
+solve time,0.212940737804 hrs
+incl,81.0
+method,SLSQP
+radius_secondary_given,True
+sma,5.00352
+rho,1

@@ -1,0 +1,24 @@
+,
+chi_actual,1873.4182884505456
+temperature_primary,6632.0
+radius_primary,1.670691
+period,0.7443
+solve time,2.15485707978 hrs
+mass_primary,0.841
+radius_secondary,1.643034
+phi0,180.0
+incl,81.0
+method,SLSQP
+sma,5.00352
+ecc,0.0
+chi_AIM,0.6
+radius_secondary_given,True
+mass_secondary,0.235
+rho,1.0
+delta,3.2
+system_name,EPIC_201325107_anomaly_batch3_2
+distance,12.5
+num_datapoints,127
+temperature_secondary,4600.0
+q,0.28
+resolution,20

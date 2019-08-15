@@ -1,0 +1,813 @@
+DEBUG:root:This logger file everytime the logging protocall is called. Save this text to another file if you need it for later. 
+DEBUG:matplotlib:CACHEDIR=/home/bot74e/.cache/matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from /home/bot74e/.cache/matplotlib/fontList.json
+DEBUG:matplotlib.backends:backend agg version v2.2
+INFO:PASSBANDS:initializing passband at /home/bot74e/.local/lib/python2.7/site-packages/phoebe/atmospheres/tables/passbands/johnson_v.pb
+DEBUG:PASSBANDS:loading passband from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/atmospheres/tables/passbands/johnson_v.pb
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:root:This logger file everytime the logging protocall is called. Save this text to another file if you need it for later. 
+DEBUG:matplotlib:CACHEDIR=/home/bot74e/.cache/matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from /home/bot74e/.cache/matplotlib/fontList.json
+DEBUG:matplotlib.backends:backend agg version v2.2
+INFO:PASSBANDS:initializing passband at /home/bot74e/.local/lib/python2.7/site-packages/phoebe/atmospheres/tables/passbands/johnson_v.pb
+DEBUG:PASSBANDS:loading passband from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/atmospheres/tables/passbands/johnson_v.pb
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:root:This logger file everytime the logging protocall is called. Save this text to another file if you need it for later. 
+DEBUG:matplotlib:CACHEDIR=/home/bot74e/.cache/matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from /home/bot74e/.cache/matplotlib/fontList.json
+DEBUG:matplotlib.backends:backend agg version v2.2
+INFO:PASSBANDS:initializing passband at /home/bot74e/.local/lib/python2.7/site-packages/phoebe/atmospheres/tables/passbands/johnson_v.pb
+DEBUG:PASSBANDS:loading passband from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/atmospheres/tables/passbands/johnson_v.pb
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans (u'/home/bot74e/.local/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans (u'/home/bot74e/.local/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:root:This logger file everytime the logging protocall is called. Save this text to another file if you need it for later. 
+DEBUG:root:This logger file everytime the logging protocall is called. Save this text to another file if you need it for later. 
+DEBUG:matplotlib:CACHEDIR=/home/bot74e/.cache/matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from /home/bot74e/.cache/matplotlib/fontList.json
+DEBUG:matplotlib.backends:backend agg version v2.2
+INFO:PASSBANDS:initializing passband at /home/bot74e/.local/lib/python2.7/site-packages/phoebe/atmospheres/tables/passbands/johnson_v.pb
+DEBUG:PASSBANDS:loading passband from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/atmospheres/tables/passbands/johnson_v.pb
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:root:This logger file everytime the logging protocall is called. Save this text to another file if you need it for later. 
+DEBUG:matplotlib:CACHEDIR=/home/bot74e/.cache/matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from /home/bot74e/.cache/matplotlib/fontList.json
+DEBUG:matplotlib.backends:backend agg version v2.2
+INFO:PASSBANDS:initializing passband at /home/bot74e/.local/lib/python2.7/site-packages/phoebe/atmospheres/tables/passbands/johnson_v.pb
+DEBUG:PASSBANDS:loading passband from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/atmospheres/tables/passbands/johnson_v.pb
+DEBUG:BUNDLE:importing from /home/bot74e/.local/lib/python2.7/site-packages/phoebe/frontend/default_bundles/default_binary.bundle
+DEBUG:BUNDLE:importing from PHOEBE v 2.1.5 into v 2.1.12
+DEBUG:BUNDLE:setting 'mass@primary@component'=1.5606455247 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.159375 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.436980746915 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=4.140625 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=5.23474820516 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.61800911029 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@primary@component'=81.0 deg from 'incl@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[ 0.         -0.15643447  0.98768834]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.3)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.4578732702 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'incl@secondary@component'=81.0 deg from 'incl@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@binary@component'=8.44173720274 rad / d from 'freq@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.81713872346 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@primary@component'=8.44173720274 rad / d from 'freq@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@primary@component'=0.7443 d from 'period@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.788798842568 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'freq@secondary@component'=8.44173720274 rad / d from 'freq@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'period@secondary@component'=0.7443 d from 'period@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'asini@binary@component'=4.94191836594 solRad from 'asini@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@primary@component'=2.37032307717 solMass from 'mass@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@primary@component'=1.09452 solRad from 'sma@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUNDLE:setting 'mass@secondary@component'=0.663690461608 solMass from 'mass@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'sma@secondary@component'=3.909 solRad from 'sma@secondary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint
+DEBUG:BUNDLE:setting 'mean_anom@binary@component'=89.9999956 deg from 'mean_anom@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_perpass@binary@component'=-0.186075 d from 't0_perpass@binary@constraint' constraint
+DEBUG:BUNDLE:setting 't0_ref@binary@component'=0.0 d from 't0_ref@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'ecosw@binary@component'=0.0 from 'ecosw@binary@constraint' constraint
+DEBUG:BUNDLE:setting 'esinw@binary@component'=0.0 from 'esinw@binary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.504864066429
+DEBUG:BUNDLE:setting 'requiv_max@primary@component'=2.47155866859 solRad from 'requiv_max@primary@constraint' constraint
+DEBUG:BUILTIN:roche.roche_misaligned_critical_requiv(q=0.28, F=1.0, d=1.0, s=[0. 0. 1.], scale=5.00352)
+DEBUG:ROCHE:libphoebe.roche_misaligned_critical_volume(q=3.57142857143, F=1.0, d=1.0, s=[0. 0. 1.]) => 0.0871806937212
+DEBUG:BUNDLE:setting 'requiv_max@secondary@component'=1.3763203896 solRad from 'requiv_max@secondary@constraint' constraint

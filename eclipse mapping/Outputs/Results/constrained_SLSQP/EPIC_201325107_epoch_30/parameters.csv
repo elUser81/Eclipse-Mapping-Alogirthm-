@@ -1,0 +1,22 @@
+,
+system_name,EPIC_201325107_epoch_30
+distance,12.5
+ecc,0.0
+temperature_primary,6632.0
+chi_AIM,0.6
+incl,81.0
+radius_primary,1.670691
+temperature_secondary,4600.0
+period,0.7443
+mass_primary,0.841
+mass_secondary,0.235
+q,0.28
+delta,3.0
+chi_actual,527.0735029628335
+radius_secondary,1.643034
+phi0,180.0
+solve time,2.9901175544 hrs
+resolution,30
+method,SLSQP
+radius_secondary_given,True
+sma,5.00352
