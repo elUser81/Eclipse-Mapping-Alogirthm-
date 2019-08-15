@@ -1,0 +1,22 @@
+,
+system_name,EPIC_201325107_epoch_anomoly1_20
+distance,12.5
+ecc,0.0
+temperature_primary,6632.0
+chi_AIM,1.0
+resolution,20
+phi0,180.0
+radius_primary,1.670691
+temperature_secondary,4600.0
+period,0.7443
+mass_primary,0.841
+mass_secondary,0.235
+q,0.28
+chi_actual,6256.591594411056
+radius_secondary,1.643034
+radius_secondary_given,True
+delta,3.0
+solve time,0.224346042474 hrs
+incl,81.0
+method,SLSQP
+sma,5.00352
