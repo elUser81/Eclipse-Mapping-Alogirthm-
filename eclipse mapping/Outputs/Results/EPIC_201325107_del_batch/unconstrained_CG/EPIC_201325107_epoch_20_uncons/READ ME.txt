@@ -1,1 +1,0 @@
-used SLSQP method with unconstrained maximization
