@@ -1,5 +1,7 @@
 
 import sys
+import os
+from os import getcwd
 
 
 
@@ -41,31 +43,22 @@ class Binary:
         '''
 
 
-        import phoebe
+
         from scipy.optimize import minimize
         # building phoebe model inside binary class
 
 
-        b = phoebe.default_binary()
-        b.set_value('q', orbital_params['q'])
-        b.set_value('incl@binary@orbit@component', orbital_params['incl'])
-        b.set_value('period@binary@orbit@component', orbital_params['period'])
-        b.set_value('sma@binary@orbit@component', orbital_params['sma'])
-        b.set_value('ecc@binary@orbit@component', orbital_params['ecc'])
-        b.set_value('distance@system', orbital_params['distance'])
-
         if 'mass_primary' not in orbital_params.keys():
-            self.mass_primary = b.get_value('mass@primary@star@component')
+            print('no primary mass value, solver has not been developed yet, make sure both masses are in param file')
         else:
             self.mass_primary = orbital_params['mass_primary']
 
         if 'mass_secondary' not in orbital_params.keys():
-            self.mass_secondary = b.get_value('mass@secondary@star@component')
+            print('no secondary mass value, solver has not been developed yet, make sure both masses are in param file')
         else:
             self.mass_secondary = orbital_params['mass_secondary']
 
-        self.sma_primary = b.get_value('sma@primary@star@component')
-        self.sma_secondary = b.get_value('sma@secondary@star@component')
+        #self.sma_secondary = b.get_value('sma@secondary@star@component')
 
         # building a dictionary of all parameters passed in the object, will use later for logging...
         self.all_params = orbital_params
@@ -76,15 +69,11 @@ class Binary:
         self.all_params['method'] = orbital_params['method']
         self.all_params['mass_primary'] = self.mass_primary
         self.all_params['mass_secondary'] = self.mass_secondary
-
-        if not self.all_params['rho']:
-            print 'Rho value not found, setting rho to 1, ignore if constrained solution is being used.'
-        else:
-            self.rho = self.all_params['rho']
+        self.rho = self.all_params['rho']
 
         if 'phi0' not in self.all_params.keys():
 
-            print 'phi0 not in orbital_params, setting phi0 equal to 0'
+            print('phi0 not in orbital_params, setting phi0 equal to 0')
             self.phi0 = 0
 
         else:
@@ -103,6 +92,8 @@ class Binary:
         self.distance = orbital_params['distance']
         self.period = orbital_params['period']
         self.binary_sma = orbital_params['sma']  # sma already in sol rad
+        self.primary_sma = self.binary_sma * (1/(1 + (self.mass_primary/self.mass_secondary)))
+        self.secondary_sma = self.binary_sma - self.primary_sma
         self.incl = np.deg2rad((90 - orbital_params
         ['incl']))  # orbital inclination, 90 - incl becase 90 degrees is considered perpendicular
         self.ecc = orbital_params['ecc']
@@ -191,7 +182,7 @@ class Binary:
 
         self.RL1_from_primary = RL1_from_primary[0] / (695.51 * 10 ** 6)  # meters to solar radii
         self.RL1_from_secondary = RL1_from_secondary[0] / (695.51 * 10 ** 6)
-        # should I multiply this by 2???
+
         self.pixel_to_RL1 = 2 * self.RL1_from_primary / self.N  # conversion factor, converts pixel units to RL1 units
         # all distances to convert should be in solar radii!
 
@@ -199,8 +190,8 @@ class Binary:
             self.radius_secondary = orbital_params['radius_secondary']
         else:
             # self.radius_secondary = None
-            print 'Roche Lobe Equation estimate not yet implemented, please add a secondary radius to your orbital ' \
-                  'parameter set (in solar radii), and make sure secondary_radius_given = True'
+            print ('Roche Lobe Equation estimate not yet implemented, please add a secondary radius to your orbital '
+                  'parameter set (in solar radii), and make sure secondary_radius_given = True')
             sys.exit()
 
         # making room for visibility matrix
@@ -208,6 +199,10 @@ class Binary:
 
         # making room for temperature solutions
         self.temperature_solutions = None
+
+    def get_r2_from_r1(self):
+
+        return self.binary_sma
 
 
     def get_secondary_contributionv2(self, y_secondary, pixel_len = 50):
@@ -239,11 +234,6 @@ class Binary:
         return float(flux_ratio)
 
 
-
-
-
-
-
     def randomized_array(self):
         from numpy.random import rand
         N = self.N
@@ -252,7 +242,6 @@ class Binary:
 
     def to_RL1(self, a_distance):
         # converts a distance in solar-radius to units of RL1 from primary star
-
         return a_distance / self.RL1_from_primary
 
     def build_orbital_model(self):
@@ -266,8 +255,8 @@ class Binary:
 
         from numpy import sin, cos, deg2rad
 
-        a1 = self.sma_primary  # semi-major axis of primary orbit
-        a2 = self.sma_secondary  # semi-major axis of secondary orbit
+        a1 = self.primary_sma  # semi-major axis of primary orbit
+        a2 = self.secondary_sma  # semi-major axis of secondary orbit
         incl = self.incl  # orbital inclination
         RL1_from_primary = self.RL1_from_primary
 
@@ -546,11 +535,11 @@ class Binary:
 
     def normalize(self, array, over=None):
         from numpy import asarray, amax
-        len_arr = len(array)
+
         if not over:
-            return asarray(map(lambda x: x / amax(array), array)).reshape((len_arr))
+            return asarray(list(map(lambda x: x / amax(array), array)))
         else:
-            return asarray(map(lambda x: x / over, array)).reshape((len_arr))
+            return asarray(list(map(lambda x: x / over, array)))
 
     def get_entropy_function(self):
         from numpy import asarray
@@ -566,11 +555,6 @@ class Binary:
             p = asarray([i / sum(I) for i in I])
             # actual function is - sum(....  but im minimizing the positive version to find the maximum of its opposite
             S = sum([pj * log(pj / qj) for pj, qj in zip(p, q)])
-
-            if S == inf:
-                S = nan_to_num(inf)
-            if S == nan:
-                S = nan_to_num(nan)
 
             return S
 
@@ -611,12 +595,14 @@ class Binary:
 
         self.constructed_phasepoints = asarray(constructed_phases)
 
+
     def estimate_chi_sqrd(self):
         from numpy import mean, amax, amin
         M = len(self.observed_uncertainties)
         sig_max_sqrd = amax(self.observed_uncertainties)
         chi_sqrd_estimate = sum(map(lambda x: sig_max_sqrd / (x ** 2), self.observed_uncertainties)) / M
         return chi_sqrd_estimate
+
 
     def get_chi_actual(self):
         from numpy import cos, where
@@ -636,6 +622,7 @@ class Binary:
         chi = sum(synth_minus_obs_sqrd) / len(synth)
 
         self.all_params['chi_actual'] = float(chi / (self.N ** 2))
+
 
     def get_synthetic_fluxes(self):
         '''
@@ -660,7 +647,7 @@ class Binary:
 
         for phi in range(len(phase_points)):
             # getting eclipse map for phase phi
-            index = where(phase_points == phi)
+            index = where(phase_points == phase_points[phi])[0][0]
             V_phi = flattened_matrix[:, index]
 
             I_times_V = [I * V for I, V in zip(Is, V_phi)]
@@ -668,8 +655,9 @@ class Binary:
 
             fluxes.append(flux)
 
-        self.synthetic_fluxes = asarray(fluxes)
+        self.synthetic_fluxes = self.normalize(asarray(fluxes))
         self.all_params['num_datapoints'] = len(self.synthetic_fluxes)
+
 
     def get_synthetic_fluxes2(self):
         from numpy import cos, where, asarray
@@ -695,6 +683,7 @@ class Binary:
 
         self.synthetic_fluxes = self.normalize(synth_fluxes)
         self.all_params['num_datapoints'] = len(self.synthetic_fluxes)
+
 
     def get_uncosntrained_chi(self):
         from numpy import cos, where
@@ -731,6 +720,7 @@ class Binary:
         return chi
 
 
+
     def build_chi_constraint(self):
         from numpy import cos, where, mean, amax, inf, nan, nan_to_num
 
@@ -760,8 +750,7 @@ class Binary:
 
             synth_fluxes = [synth_flux(I, phi) for phi in phase_points]
 
-            synth_minus_observed_sqrd = [((synth - obs) / sig) ** 2 for synth, obs, sig in
-                                         zip(synth_fluxes, obs_fluxes, sigmas)]
+            synth_minus_observed_sqrd = [((synth - obs) / sig) ** 2 for synth, obs, sig in zip(synth_fluxes, obs_fluxes, sigmas)]
 
             chi_sqrd = sum(synth_minus_observed_sqrd) / M
 
@@ -795,7 +784,7 @@ class Binary:
         '''
         from numdifftools import Jacobian
         def J(x):
-            return Jacobian(f)(x).ravel()
+            return Jacobian(f)(x)#.ravel()
         return J
 
 
@@ -805,7 +794,6 @@ class Binary:
         from scipy.optimize import minimize, NonlinearConstraint
         from numpy import amax, asarray, inf
         import time
-        from numdifftools import Jacobian
 
 
         N = self.N
@@ -822,7 +810,7 @@ class Binary:
         ub = (self.chi_AIM + 0.01) * (self.N ** 2)
         # changed cons function to the line below in this version
         # nonlincons = NonlinearConstraint(chi_sqrd, lb, ub)
-        print"Solving entropy equation with resolution: ", self.N, ' by ', self.N
+        print("Solving entropy equation with resolution: ", self.N, ' by ', self.N)
         start = time.time()
         # method usually = method, but im changing to 'trust-constr' for testing, since i think it might use better coonstraints
 
@@ -840,10 +828,11 @@ class Binary:
         image_entropy = S(res.x)
         image_solution = res.x
         sol_max = amax(image_solution)
-        normalized_solution = map(lambda x: x / sol_max, image_solution)
+        normalized_solution = list(map(lambda x: x / sol_max, image_solution))
 
         self.image_entropy = image_entropy
         self.image_solution = asarray(normalized_solution).reshape((N, N))
+
 
     def normalize_fluxes(self):
         '''
@@ -860,8 +849,8 @@ class Binary:
         def norm_sig(sig, flux):
             return sig / flux
 
-        norm_fluxes = asarray(map(lambda flux: flux / flux_max, fluxes))
-        norm_sigmas = asarray(map(lambda sig: sig / flux_max, sigmas))
+        norm_fluxes = asarray(list(map(lambda flux: flux / flux_max, fluxes)))
+        norm_sigmas = asarray(list(map(lambda sig: sig / flux_max, sigmas)))
         # norm_sigmas = asarray([norm_sig(sig, flux) for sig, flux in zip(sigmas, fluxes)])
 
         self.observed_fluxes = norm_fluxes
@@ -881,10 +870,11 @@ class Binary:
             T = ((I * flux_primary) / steph_boltz) ** (0.25)
             return T / temp_primary
 
-        temp_solutions = map(temp_func, image_solutions)
+        #temp_solutions = list(map(temp_func, image_solutions))
+        temp_solutions = asarray([temp_func(i) for i in image_solutions])
 
         # normalizing
-        temp_solutions = asarray(map(lambda x: x / amax(temp_solutions), temp_solutions))
+        temp_solutions = asarray(list(map(lambda x: x / amax(temp_solutions), temp_solutions)))
         # temp_solutions = asarray(map(lambda x: x * temp1, temp_solutions))
 
         self.temperature_solutions = temp_solutions.reshape((self.N, self.N))
@@ -1079,24 +1069,26 @@ class Binary:
         for j in range(N):
             for i in range(N):
                 radius = dist(i, j) * conv
-                if radius > self.RL1_from_primary:
-                    temps[i, j] = nan
-                    continue
+                #if radius > self.RL1_from_primary:
+                    #temps[i, j] = nan
+                    #continue
                 radii.append(radius)
 
         temps = temps.reshape( N**2)
         temps = temps[~isnan(temps)]
         temps_calc = [temp * temp_primary for temp in temps]
-        radii_calc = self.normalize(radii, over = self.RL1_from_primary)
+        #radii_calc = self.normalize(radii, over = self.RL1_from_primary)
+        radii_calc = self.normalize(radii)
+
 
 
         def temp_theory2(R):
             Tmax = amax(temps) * temp_primary
             Tmin = amin(temps) * temp_primary
             const = amax(radii ) /self.RL1_from_primary
-            return (abs(R - 1 )**(0.75) ) *(Tmax - Tmin) + Tmin
+            return (abs(R - 1 )**((0.75) ) *(Tmax - Tmin)) + Tmin
 
-        radii_theory = linspace(0 ,1)
+        radii_theory = linspace(0, 1)
         temps_theory = temp_theory2(radii_theory)
 
 
@@ -1174,8 +1166,8 @@ class Binary:
         from numpy import append, amin, asarray
         import time
 
-        print 'Solving unconstrained entropy equation with resolution ' \
-            , self.N, ' by ', self.N
+        print ('Solving unconstrained entropy equation with resolution ' \
+            , self.N, ' by ', self.N)
 
         F = self.get_unconstrained(rho = self.rho)
         params_guess = append(self.gkern().reshape(self. N**2), self.chi_AIM)
@@ -1208,10 +1200,6 @@ class Binary:
 
 
 
-
-
-
-
 class Processes:
 
     def __init__(self):
@@ -1237,7 +1225,8 @@ class Processes:
 
         to_float = ['ecc', 'chi_AIM', 'period', 'distance', 'incl',
                     'radius_primary', 'q', 'radius_secondary', 'sma', 'delta',
-                    'mass_primary', 'mass_secondary', 'temperature_primary', 'temperature_secondary', 'phi0', 'rho']
+                    'mass_primary', 'mass_secondary', 'temperature_primary',
+                    'temperature_secondary', 'phi0', 'rho']
 
         to_int = ['resolution']
 
@@ -1264,6 +1253,7 @@ class Processes:
 
     @staticmethod
     def get_closest(val, array):
+        #returns index of an element that is closest to val
         from numpy import argmin
         index = argmin(map(lambda x: abs(x - val), array))
         return index
@@ -1390,28 +1380,28 @@ class Processes:
                     along with all corresponding csv files of data for later use
         '''
 
-        print "Reconstructing Accretion disk for system: ", str(binary_object.system_name)
+        print("Reconstructing Accretion disk for system: ", str(binary_object.system_name))
 
         if binary_object.fluxes_not_mags:
-            print "\nLight curve data was in units of flux. Normalizing... ",
+            print("\nLight curve data was in units of flux. Normalizing... ")
             binary_object.normalize_fluxes()
-            print "Done."
+            print("Done.")
 
-        print "\n Building orbital model...",
+        print("\n Building orbital model...")
         binary_object.build_orbital_model()
-        print "Done."
+        print("Done.")
 
-        print '\n Constructing phase points...',
+        print('\n Constructing phase points...')
         binary_object.construct_phasepoints()
-        print 'Done.'
+        print('Done.')
 
-        print '\n Building Eclipse Map...',
+        print('\n Building Eclipse Map...')
         binary_object.build_visibility_matrix()
-        print "Done."
+        print("Done.")
 
-        print '\n Solving Maximum Entropy Equation...',
+        print('\n Solving Maximum Entropy Equation...')
         binary_object.get_image_solution()
-        print 'Done.'
+        print('Done.')
 
         binary_object.get_synthetic_fluxes()
 
@@ -1425,7 +1415,7 @@ class Processes:
         if not isdir(binary_dir):
             makedirs(binary_dir)
 
-        print "\nSaving data in directory: ", binary_dir
+        print("\nSaving data in directory: ", binary_dir)
 
         image_path = join(binary_dir, 'accretion_image.png')
         params_path = join(binary_dir, 'parameters.csv')
@@ -1448,7 +1438,7 @@ class Processes:
         self.save_light_curve_data(binary_object, data_path)
         self.save_light_curve_data(binary_object, LC_synth_data_path, synthetic=True)
         self.save_solutions(binary_object, solutions_path)
-        binary_object.save_synth_vs_obs(LC_all_plot_path)
+        #binary_object.save_synth_vs_obs(LC_all_plot_path)
         synth_title = 'Synthetic Flux vs. Time [JD]'
         self.plot_save_LC(binary_object.synthetic_fluxes, binary_object.JDtimes, LC_synth_plot_path, title=synth_title,
                           xlabel='Time [JD]', ylabel='Flux (Normalized)')
@@ -1459,7 +1449,7 @@ class Processes:
         binary_object.get_bbody_curve(bbody_path)
         # binary_object.save_bbody_curve(bbody_path)
 
-        print "\nAnalysis complete for system: ", binary_object.system_name
+        print("\nAnalysis complete for system: ", binary_object.system_name)
 
     from os.path import join
     from os import getcwd
@@ -1481,7 +1471,7 @@ class Processes:
         if not isdir(binary_dir):
             makedirs(binary_dir)
 
-        print "\nSaving data in directory: ", binary_dir
+        print("\nSaving data in directory: ", binary_dir)
 
         if binary_object.synthetic_fluxes == None:
             binary_object.get_synthetic_fluxes()
@@ -1507,7 +1497,7 @@ class Processes:
         self.save_light_curve_data(binary_object, data_path)
         self.save_light_curve_data(binary_object, LC_synth_data_path, synthetic=True)
         self.save_solutions(binary_object, solutions_path)
-        binary_object.save_synth_vs_obs(LC_all_plot_path)
+        #binary_object.save_synth_vs_obs(LC_all_plot_path)
         synth_title = 'Synthetic Flux vs. Time [JD]'
         self.plot_save_LC(binary_object.synthetic_fluxes, binary_object.JDtimes, LC_synth_plot_path, title=synth_title,
                           xlabel='Time [JD]', ylabel='Flux (Normalized)')
@@ -1518,7 +1508,7 @@ class Processes:
         binary_object.get_bbody_curve(bbody_path)
         # binary_object.save_bbody_curve(bbody_path)
 
-        print "\n Saved data in directory: ", binary_dir
+        print("\n Saved data in directory: ", binary_dir)
 
 
     @classmethod
@@ -1535,28 +1525,28 @@ class Processes:
                     along with all corresponding csv files of data for later use
         '''
 
-        print "Reconstructing Accretion disk for system: ", str(binary_object.system_name)
+        print("Reconstructing Accretion disk for system: ", str(binary_object.system_name))
 
         if binary_object.fluxes_not_mags:
-            print "\nLight curve data was in units of flux. Normalizing... ",
+            print("\nLight curve data was in units of flux. Normalizing... ")
             binary_object.normalize_fluxes()
-            print "Done."
+            print("Done.")
 
-        print "\n Building orbital model...",
+        print("\n Building orbital model...")
         binary_object.build_orbital_model()
-        print "Done."
+        print("Done.")
 
-        print '\n Constructing phase points...',
+        print('\n Constructing phase points...')
         binary_object.construct_phasepoints()
-        print 'Done.'
+        print('Done.')
 
-        print '\n Building Eclipse Map...',
+        print('\n Building Eclipse Map...')
         binary_object.build_visibility_matrix()
-        print "Done."
+        print("Done.")
 
-        print '\n Solving Maximum Entropy Equation...',
+        print('\n Solving Maximum Entropy Equation...')
         binary_object.get_unconstrained_solution()
-        print 'Done.'
+        print('Done.')
 
         binary_object.get_synthetic_fluxes()
 
@@ -1570,7 +1560,7 @@ class Processes:
         if not isdir(binary_dir):
             makedirs(binary_dir)
 
-        print "\nSaving data in directory: ", binary_dir
+        print("\nSaving data in directory: ", binary_dir)
 
         image_path = join(binary_dir, 'accretion_image.png')
         params_path = join(binary_dir, 'parameters.csv')
@@ -1606,7 +1596,7 @@ class Processes:
         binary_object.get_bbody_curve(bbody_path)
         # binary_object.save_bbody_curve(bbody_path)
 
-        print "\nAnalysis complete for system: ", binary_object.system_name
+        print("\nAnalysis complete for system: ", binary_object.system_name)
 
 
     @staticmethod
@@ -1661,7 +1651,7 @@ class Processes:
         # image_solutions = asarray(pd.read_csv(solutions_path))
         # image_solutions = asarray(genfromtxt(solutions_path))
         b = Binary(params, light_curve_data)
-        print '\n Reloaded Binary System: ', b.system_name
+        print ('\n Reloaded Binary System: ', b.system_name)
 
         # b.image_solution = asarray(image_solutions).reshape((b.N, b.N))
 
@@ -1677,14 +1667,14 @@ class Processes:
             b.image_solution = image_solution
 
 
-        print 'Loading phasepoints, orbital model, visibility matrix, and synthetic fluxes...',
+        print('Loading phasepoints, orbital model, visibility matrix, and synthetic fluxes...')
 
         b.construct_phasepoints()
         b.build_orbital_model()
         b.build_visibility_matrix()
         b.get_synthetic_fluxes()
 
-        print 'Done'
+        print('Done')
 
         return b
 
@@ -1710,8 +1700,8 @@ class Processes:
         temp_solutions_path = join(binary_dir, 'temperature_solutions.csv')
         temp_image_path = join(binary_dir, 'temperature_image.png')
 
-        print"Analyzing previously solved image for system: ", binary_object.system_name
-        print '\n Getting synthetic fluxes, temperature profile and light curve plot...',
+        print("Analyzing previously solved image for system: ", binary_object.system_name)
+        print('\n Getting synthetic fluxes, temperature profile and light curve plot...')
 
         binary_object.flux_to_temp()
 
@@ -1721,9 +1711,9 @@ class Processes:
         binary_object.get_bbody_curve2(bbody_path)
         binary_object.get_chi_actual()
         self.save_parameters(binary_object, params_path)
-        print 'Done.'
-        print '\n Analysis complete for system: ', binary_object.system_name
-        print 'Saved in ', binary_dir
+        print('Done.')
+        print('\n Analysis complete for system: ', binary_object.system_name)
+        print('Saved in ', binary_dir)
 
     @classmethod
     def load_binary(self, binary_dir):
@@ -1736,7 +1726,7 @@ class Processes:
         params = self.get_params_from_file(params_path)
 
         b = Binary(params, light_curve_data)
-        print '\n Loaded Binary System: ', b.system_name
+        print('\n Loaded Binary System: ', b.system_name)
         return b
 
     @staticmethod
@@ -1908,7 +1898,7 @@ class Processes:
         elif start != None and stop != None:
             data = data[start:stop, :]
         else:
-            print 'Something strange happened with the start and stop indicies, plotting all instead'
+            print('Something strange happened with the start and stop indicies, plotting all instead')
             data = data[:, :]
 
         # flipping flux data set to find peaks as primary minima
@@ -1931,7 +1921,7 @@ class Processes:
 
         # fname = join(binary_dir, file_name)
         plt.savefig(file_name)
-        print "Plotted peaks, saved in: ", file_name
+        print("Plotted peaks, saved in: ", file_name)
 
     @staticmethod
     def get_data_paths(data_dir, start_file, range, ext = '.csv'):
@@ -1952,7 +1942,7 @@ class Processes:
         end_index = start_index + range
 
         if end_index > len(csv_files):
-            print 'end index was larger than the list of files, getting all files to the very end instead'
+            print('end index was larger than the list of files, getting all files to the very end instead')
             end_index = len(csv_files) - 1
 
         csv_files = csv_files[start_index:end_index]
@@ -1980,7 +1970,7 @@ class Processes:
                 merged_data = vstack((merged_data, data))
 
         self.save_LC_data_from_array(merged_data, save_path)
-        print 'Saved merged data in ', save_path
+        print('Saved merged data in ', save_path)
 
     @classmethod
     def error_handler(self):
@@ -2014,7 +2004,7 @@ class Processes:
             try:
                 self.build_compute_save(b)
             except Exception:
-                print 'Encountered error for system: ' ,b.system_name, ' at ', datetime.now()
+                print('Encountered error for system: ' ,b.system_name, ' at ', datetime.now())
                 logging.exception('Encountered error for system: ' ,b.system_name, ' at ', datetime.now())
                 continue
 
@@ -2078,12 +2068,20 @@ class Processes:
         new_binary.image_solution = convolved
         new_name = base.system_name + '_conv_' + signal.system_name
         new_binary.system_name = new_name
-        print 'Convolution complete.'
+        print('Convolution complete.')
         #Processes.save(new_binary, save_dir)
         path = join(save_dir, 'convolved_image.png')
         Processes.save_image(new_binary, path)
-        print 'Saved in ', path
+        print('Saved in ', path)
 
 
+'''
+cwd = getcwd()
+files = ['EPIC_201325107_anomaly_batch0_5', 'EPIC_201325107_anomaly_batch1_2']
+parent_dir = os.path.join(cwd, 'Outputs', 'Results', 'EPIC_201325107_del_batch')
 
+for file in files:
+    dir = os.path.join(parent_dir, file)
+    Processes.analyze_solved_binary(dir)
 
+'''
